@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen font-sans text-gray-800">
+    <nav class="bg-blue-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-xl font-bold">Delta State Election Portal</a>
+            <div class="space-x-4">
+                <a href="/polling-unit" class="hover:text-blue-200">Polling Unit Result</a>
+                <a href="/lga-total" class="hover:text-blue-200">LGA Total</a>
+                <a href="/new-result" class="hover:text-blue-200">Add Result</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto px-4 py-8">
+        <%- body %>
+    </div>
+</body>
+</html>
